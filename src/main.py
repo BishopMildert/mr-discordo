@@ -2,9 +2,14 @@
 import discord
 import os
 from dotenv import load_dotenv
-
+# import local functions
+import core as C
 # load env credentials
 load_dotenv()
+
+# quotes stuff
+quotes = C.reader('../replies/phrases.txt')
+# C.get_random(quotes)
 
 client = discord.Client()
 
@@ -19,6 +24,6 @@ async def on_message(message):
     
     if message.content.endswith('Hamid says:'):
         # call the function here to post a message into the server
-        await message.channel.send('no, fuck you!')
+        await message.channel.send(quotes[C.get_random(quotes)])
 
 client.run(os.getenv('TOKEN'))
