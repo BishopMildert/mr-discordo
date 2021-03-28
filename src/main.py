@@ -8,7 +8,7 @@ import core as C
 load_dotenv()
 
 # quotes stuff
-quotes = C.reader('../replies/phrases.txt')
+quotes = C.reader('./replies/phrases.txt')
 # C.get_random(quotes)
 
 client = discord.Client()
