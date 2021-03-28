@@ -7,3 +7,4 @@ A simple discord Bot written in Python.
 `main` is used for connecting to Discord servers and executing Discord API functionalities.
 
 derived from the following freeCodeCamp [tutorial](https://www.freecodecamp.org/news/create-a-discord-bot-with-python/)
+[remote deploy](https://janakiev.com/blog/python-background/)
